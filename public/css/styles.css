@@ -1,0 +1,202 @@
+/*
+ - Toda vez que usa ID é # (hashtag), exemplo: #logo
+ - Toda vez que usa class é . (ponto), exemplo: .title
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafb;
+}
+
+p {
+  margin-bottom: 12px;
+  line-height: 26px;
+}
+
+main {
+  padding: 0 16px;
+}
+
+.container {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+#logo {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Lora", serif;
+  margin: 0;
+}
+
+.title {
+  color: #a16207;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  font-family: "Lora", serif;
+}
+
+.logo-footer {
+  font-size: 22px;
+}
+
+.cover {
+  text-align: center;
+}
+
+.cover img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  border: 3px dashed #eab308;
+}
+
+.cover figcaption {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 18px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #a16207;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 80px;
+}
+
+.main-aside {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main-aside ol,
+.main-aside ul {
+  padding-left: 32px;
+}
+
+.main-aside li {
+  margin-bottom: 8px;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  margin-top: 48px;
+  font-size: 14px;
+  gap: 8px;
+  border-top: 1px solid #d1d5db;
+  color: #6b7280;
+}
+
+.main-footer .logo-footer {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.post-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+.post-header {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-header.post-cover {
+  background-image: url("/public/images/jornada-floresta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 16px;
+  padding-top: 80px;
+  padding-bottom: 24px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.post-header .post-cover-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 16px;
+}
+
+.post-header .post-header-info {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.post-header .post-header-info .post-header-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 16px;
+}
+
+.post-header .post-header-info .post-header-details .title {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.post-header .post-header-info .post-header-details .caption {
+  color: #d1d5db;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.post-header .post-image {
+  text-align: left;
+}
+
+.post-header .post-image img {
+  width: 180px;
+  height: 180px;
+}
+
+.post-content footer ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 28px;
+}
