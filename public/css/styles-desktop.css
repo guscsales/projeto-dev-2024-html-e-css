@@ -1,0 +1,27 @@
+@media (min-width: 1024px) {
+  .main-header {
+    padding: 16px;
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr 300px;
+    gap: 80px;
+  }
+
+  #logo {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .post-header .post-header-info {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .main-aside {
+    padding: 0 16px;
+  }
+}
